@@ -1,0 +1,118 @@
+/* ???? ????? ?????? ?????? */
+:root{
+  --bg: #0a0f1e;
+  --primary: #00eaff;
+  --secondary: #0077ff;
+  --text: #d1eaff;
+  --panel: #0e1733cc;
+  --ring: 0 0 40px 6px #00eaff40, 0 0 90px 22px #00eaff20;
+  --radius: 22px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Noto Kufi Arabic",Tahoma,Arial,sans-serif;
+  overflow-x:hidden;
+}
+
+/* ?????? ??????? */
+#fx{position:fixed; inset:0; z-index:0}
+
+/* ??????? */
+.wrap{position:relative; z-index:1; max-width:1150px; margin:auto; padding:12px 18px 60px}
+
+/* ?????? */
+.main-header{position:relative; text-align:center; padding:34px 16px 14px}
+.main-logo{
+  width:min(280px,80vw); height:auto; margin:0 auto 12px; display:block;
+  filter: drop-shadow(0 0 22px #00eaffaa);
+  animation: floatLogo 5s ease-in-out infinite;
+}
+@keyframes floatLogo{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.title{
+  font-size:clamp(22px,3.2vw,34px); margin:0 0 6px; font-weight:900;
+  color:var(--primary);
+  text-shadow:0 0 10px var(--primary), 0 0 30px var(--secondary);
+}
+.subtitle{margin:0; opacity:.9}
+
+/* ?????? */
+.section-title{
+  margin:24px 6px 12px; text-align:center; font-weight:900;
+  font-size:clamp(18px,2.2vw,26px); color:var(--primary);
+  text-shadow:0 0 12px var(--primary), 0 0 28px var(--secondary);
+}
+
+/* ?????? ??????? */
+.grid{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{
+  background:linear-gradient(180deg, #0f1733ee, #0a1229ee);
+  border:1px solid #16315a; border-radius:var(--radius);
+  padding:18px 16px 16px; box-shadow:inset 0 0 0 1px #ffffff0e, 0 12px 30px #0009;
+  transition:.35s ease transform,.35s ease border-color,.35s ease box-shadow;
+}
+.card:hover{transform:translateY(-4px); border-color:#2363ff66; box-shadow:var(--ring)}
+.label{margin:0 0 12px; font-weight:800; line-height:1.5}
+.tag{display:inline-block; font-size:12px; padding:2px 8px; border-radius:999px; margin-inline-start:8px;
+  color:#bfe6ff; background:#0f1f3a; border:1px solid #1b3e6d}
+
+/* ????? */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px; width:100%;
+  background: transparent;
+  border:2px solid var(--primary); color:var(--primary);
+  text-decoration:none; font-weight:900; border-radius:14px; padding:13px 18px;
+  box-shadow:0 0 0 0 transparent; transition:.25s ease transform,.25s ease box-shadow,.25s ease background,.25s ease color;
+}
+.btn:hover{
+  background: var(--primary); color:#07101e;
+  box-shadow:0 0 18px var(--primary), 0 0 50px #0077ff66; transform:translateY(-2px);
+}
+.btn .icon{width:22px; height:22px; object-fit:cover; border-radius:4px; filter:drop-shadow(0 0 8px #00eaff88)}
+
+/* ??????? */
+.service{padding:20px; border:1px solid #16315a; border-radius:calc(var(--radius) + 4px);
+  background:linear-gradient(180deg,#0f1733ee,#0a1229ee); box-shadow:inset 0 0 0 1px #ffffff0f, 0 12px 30px #0009;}
+
+/* ??? ????? */
+.payments{margin:10px auto 24px; max-width:1100px}
+.pay-grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fit, minmax(120px, 1fr))}
+.pay-card{
+  background: linear-gradient(180deg,#0f1733ee,#0a1229ee);
+  border:1px solid #16315a; border-radius:16px;
+  padding:14px 10px; text-align:center;
+  box-shadow: inset 0 0 0 1px #ffffff12, 0 10px 26px #0009;
+  transition:.3s ease transform, .3s ease box-shadow, .3s ease border-color;
+}
+.pay-card:hover{transform:translateY(-3px); border-color:#2363ff66; box-shadow:var(--ring)}
+.pay-card img{width:44px; height:44px; object-fit:contain; filter: drop-shadow(0 0 8px #00eaff77)}
+.pay-card span{display:block; margin-top:8px; font-weight:700; color:#d1eaff; font-size:14px}
+.pay-cta{max-width:320px; margin:18px auto 0; display:flex}
+
+/* ?? ?????? ?????? */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background: radial-gradient(circle, #00eaff 0%, #0099ff 100%);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 15px #00eaffaa, 0 0 30px #0099ffaa;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.whatsapp-float img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%; /* ???? ?????? ???? ????? ?????? */
+  display: block;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #00eaff, 0 0 50px #0099ff;
+}
