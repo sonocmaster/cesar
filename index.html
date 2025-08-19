@@ -198,133 +198,57 @@
 
   </main>
 
-  <footer>© جروبات سيزار — ألوان مطابقة للّوجو وتصميم نيون احترافي</footer>
-
-
-<!-- زر تواصل عائم (ثيم أزرق + لوجو) -->
-<div class="wa-fab" id="whatsAppWidget" dir="rtl">
-  <button class="wa-btn" id="waToggle" aria-haspopup="true" aria-expanded="false" aria-controls="waMenu">
-    <!-- لوجو الموقع -->
-    <img class="brand-logo" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="Logo">
-    <span class="btn-text">تواصل</span>
-  </button>
-
-  <div class="wa-menu" id="waMenu" role="menu" aria-labelledby="waToggle">
-    <div class="wa-menu-header">
-      <div class="dot"></div>
-      <div>
-        <div class="wa-menu-title">اختر جهة التواصل</div>
-        <div class="wa-menu-sub">نفتح واتساب مباشرة بالرسالة الجاهزة</div>
-      </div>
-    </div>
-
-    <nav class="wa-list">
-      <a href="#" class="wa-item" id="contactAssistant" role="menuitem" aria-label="التواصل مع المساعد">
-        <div class="avatar assistant">م</div>
-        <div class="label">
-          <span class="primary">التواصل مع المساعد</span>
-          <span class="secondary">دعم سريع واستفسارات عامة</span>
-        </div>
-      </a>
-
-      <a href="#" class="wa-item" id="contactCesar" role="menuitem" aria-label="التواصل مع سيزار">
-        <div class="avatar cesar">س</div>
-        <div class="label">
-          <span class="primary">التواصل مع سيزار</span>
-          <span class="secondary">تنسيق مباشر ومكالمات</span>
-        </div>
-      </a>
-
-      <div class="hint">* تقدر تعدّل الرسالة داخل واتساب قبل الإرسال.</div>
-    </nav>
-  </div>
-</div>
-
-<div class="wa-backdrop" id="waBackdrop" aria-hidden="true"></div>
-
-<style>
-  :root{
-    /* غيّر اللون لو عندك كود أزرق محدد للهوية */
-    --brand:#2563eb;         /* أزرق أساسي */
-    --brand-dark:#1e40af;    /* أزرق أغمق */
-    --ink:#0f172a;
-    --muted:#e2e8f0;
-    --card:#ffffff;
-    --shadow:0 10px 25px rgba(0,0,0,.12), 0 6px 12px rgba(0,0,0,.08);
-<!-- زر تواصل أزرق عائم -->
-<div class="wa-fab" id="whatsAppWidget">
-  <button class="wa-btn" id="waToggle">
+  <footer>© جروبات سيزار 2025</footer>
+<!-- تواصل واتساب (HTML/CSS فقط) -->
+<details class="wa-fab" dir="rtl" aria-label="زر تواصل">
+  <summary class="wa-btn">
     <img class="brand-logo" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="Logo">
     <span>تواصل</span>
-  </button>
+  </summary>
 
-  <div class="wa-menu" id="waMenu">
-    <a href="#" id="contactAssistant">التواصل مع المساعد</a>
-    <a href="#" id="contactCesar">التواصل مع سيزار</a>
+  <div class="wa-card" role="menu" aria-label="اختيارات التواصل">
+    <!-- المساعد -->
+    <a class="wa-item" role="menuitem"
+       href="https://wa.me/201200851326?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9%20%D8%A7%D9%84%D9%85%D8%AC%D8%A7%D9%86%D9%8A."
+       target="_blank" rel="noopener">التواصل مع المساعد</a>
+
+    <!-- سيزار -->
+    <a class="wa-item" role="menuitem"
+       href="https://wa.me/201126707385?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%B3%D9%8A%D8%B2%D8%A7%D8%B1%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9."
+       target="_blank" rel="noopener">التواصل مع سيزار</a>
   </div>
-</div>
-
-<div class="wa-backdrop" id="waBackdrop"></div>
+</details>
 
 <style>
-  .wa-fab{position:fixed;bottom:16px;right:16px;z-index:1000;font-family:sans-serif;}
+  /* زر عائم – أزرق بنفس ستايلك العام، بدون أي تأثير على باقي الموقع */
+  .wa-fab{position:fixed;bottom:16px;right:16px;z-index:1000}
   .wa-btn{
-    display:flex;align-items:center;gap:.5rem;
-    background:#2563eb;color:#fff;font-weight:bold;
-    border:none;border-radius:999px;padding:.6rem 1rem;
-    cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.2);
+    list-style:none; cursor:pointer;
+    display:flex; align-items:center; gap:.55rem;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:#fff; border-radius:999px; padding:.65rem .95rem;
+    box-shadow:0 10px 25px rgba(0,0,0,.12), 0 6px 12px rgba(0,0,0,.08);
+    font-weight:800; letter-spacing:.2px;
   }
-  .brand-logo{width:26px;height:26px;border-radius:50%;}
-  .wa-menu{
-    position:absolute;bottom:55px;right:0;background:#fff;
-    border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.15);
-    overflow:hidden;opacity:0;pointer-events:none;transition:.2s;
+  .wa-btn::-webkit-details-marker{display:none} /* نخفي سهم details الافتراضي */
+  .wa-btn::marker{content:""}                  /* للمتصفحات الأخرى */
+  .brand-logo{width:28px;height:28px;border-radius:50%;object-fit:cover}
+
+  .wa-card{
+    position:absolute; right:0; bottom:58px;
+    width:min(92vw,320px);
+    background:#0b1220; border:1px solid #1b2a44; border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+    overflow:hidden; opacity:0; transform:translateY(10px);
+    transition:opacity .18s ease, transform .18s ease; pointer-events:none;
   }
-  .wa-menu.open{opacity:1;pointer-events:auto;}
-  .wa-menu a{
-    display:block;padding:12px 16px;text-decoration:none;
-    color:#333;border-top:1px solid #eee;
+  .wa-fab[open] .wa-card{opacity:1; transform:translateY(0); pointer-events:auto}
+
+  .wa-item{
+    display:block; padding:12px 16px; text-decoration:none;
+    color:#e6f0ff; border-top:1px solid #1b2a44
   }
-  .wa-menu a:first-child{border-top:0;}
-  .wa-menu a:hover{background:#f1f5f9;}
-  .wa-backdrop{
-    position:fixed;inset:0;background:rgba(0,0,0,.3);
-    opacity:0;pointer-events:none;transition:.2s;
-  }
-  .wa-backdrop.open{opacity:1;pointer-events:auto;}
+  .wa-item:first-child{border-top:0}
+  .wa-item:hover{background:#0f1a2e}
 </style>
 
-<script>
-  const NUMBERS = {
-    assistant: "201200851326", // 01200851326
-    cesar: "201126707385"     // 01126707385
-  };
-  const MESSAGES = {
-    assistant: "مرحباً، أحتاج مساعدة بخصوص الموقع.",
-    cesar: "أهلاً سيزار، أود التواصل معك."
-  };
-
-  const toggleBtn=document.getElementById('waToggle');
-  const menu=document.getElementById('waMenu');
-  const backdrop=document.getElementById('waBackdrop');
-
-  toggleBtn.addEventListener('click',()=>{
-    menu.classList.toggle('open');
-    backdrop.classList.toggle('open');
-  });
-  backdrop.addEventListener('click',()=>{
-    menu.classList.remove('open');
-    backdrop.classList.remove('open');
-  });
-
-  document.getElementById('contactAssistant').addEventListener('click',e=>{
-    e.preventDefault();
-    window.open(`https://wa.me/${NUMBERS.assistant}?text=${encodeURIComponent(MESSAGES.assistant)}`,'_blank');
-    menu.classList.remove('open');backdrop.classList.remove('open');
-  });
-  document.getElementById('contactCesar').addEventListener('click',e=>{
-    e.preventDefault();
-    window.open(`https://wa.me/${NUMBERS.cesar}?text=${encodeURIComponent(MESSAGES.cesar)}`,'_blank');
-    menu.classList.remove('open');backdrop.classList.remove('open');
-  });
-</script>
