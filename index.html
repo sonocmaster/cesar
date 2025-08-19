@@ -1,206 +1,170 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>????? ?????  </title>
-  <meta name="color-scheme" content="dark" />
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جروبات سيزار</title>
+  <style>
+    body {
+      background: #0a0f1c;
+      color: #fff;
+      font-family: "Tahoma", sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header img {
+      max-width: 250px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    h1, h2 {
+      color: #00f0ff;
+      text-shadow: 0 0 15px #00f0ff;
+    }
+
+    .group-card {
+      background: rgba(0, 0, 0, 0.6);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 20px #00f0ff;
+    }
+
+    .group-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .group-card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00f0ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .group-card a:hover {
+      background: #0088aa;
+      color: #fff;
+    }
+
+    /* زر واتساب عائم */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 100;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #00f0ff;
+      background: transparent;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: rgba(0,0,0,0.7);
+      color: #00f0ff;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ????? ?????? -->
-  <canvas id="fx" aria-hidden="true"></canvas>
-
-  <!-- ?????? ??????? ??????? -->
-  <header class="main-header">
-    <img src="https://i.ibb.co/k6xmSvjt/1755565096763.jpg" alt="Cesar Logo" class="main-logo">
-    <h1 class="title">????? ?????</h1>
-    <p class="subtitle">???? ????? � ??? ????? � ??? ?? ???????</p>
+  <!-- اللوجو -->
+  <header>
+    <img src="https://i.ibb.co/k6xmSvjt/1755565096763.jpg" alt="Cesar Logo">
+    <h1>جروبات سيزار</h1>
+    <p>أفضل مكان لخدمات الألعاب</p>
   </header>
 
-  <main class="wrap">
+  <!-- الجروبات -->
+  <div class="group-card">
+    <h3>جروب بيع وشراء حسابات 1</h3>
+    <a href="https://chat.whatsapp.com/BTgzmTkZPbH54ik9GVWFF1?mode=ac_t">انضم الآن</a>
+  </div>
 
-    <!-- ?????? ????? -->
-    <h2 class="section-title">?????? ?????</h2>
-    <section class="grid" aria-label="????? ????????">
-      <article class="card">
-        <h3 class="label">1?? ??? ????? ?????? 1 <span class="tag">WhatsApp</span></h3>
-        <a class="btn" href="https://chat.whatsapp.com/BTgzmTkZPbH54ik9GVWFF1?mode=ac_t" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب بيع وشراء حسابات 2</h3>
+    <a href="https://chat.whatsapp.com/LuUF8Jt2p5NBurtptK7DfU?mode=ac_t">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">2?? ??? ????? ?????? 2 <span class="tag">WhatsApp</span></h3>
-        <a class="btn" href="https://chat.whatsapp.com/LuUF8Jt2p5NBurtptK7DfU?mode=ac_t" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب بيع وشراء حسابات 3</h3>
+    <a href="https://chat.whatsapp.com/KjXssw6AQJKL3HeaQIYslQ?mode=ac_t">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">3?? ??? ????? ?????? 3 <span class="tag">WhatsApp</span></h3>
-        <a class="btn" href="https://chat.whatsapp.com/KjXssw6AQJKL3HeaQIYslQ?mode=ac_t" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب بيع وشراء حسابات 4</h3>
+    <a href="https://chat.whatsapp.com/KZXI64CpgCI8PyogdKHNeU?mode=ac_t">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">4?? ??? ????? ?????? 4 <span class="tag">WhatsApp</span></h3>
-        <a class="btn" href="https://chat.whatsapp.com/KZXI64CpgCI8PyogdKHNeU?mode=ac_t" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب بيع وشراء حسابات 5</h3>
+    <a href="https://chat.whatsapp.com/JpXwWLRe7ia5zSF9xIhpiE?mode=ac_t">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">5?? ??? ????? ?????? 5 <span class="tag">WhatsApp</span></h3>
-        <a class="btn" href="https://chat.whatsapp.com/JpXwWLRe7ia5zSF9xIhpiE?mode=ac_t" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب بيع وشراء حسابات 6</h3>
+    <a href="https://chat.whatsapp.com/BZU8vHd0KWk8wuQhvk29xD?mode=ac_t">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">6?? ??? ????? ?????? 6 <span class="tag">WhatsApp</span></h3>
-        <a class="btn" href="https://chat.whatsapp.com/BZU8vHd0KWk8wuQhvk29xD?mode=ac_t" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب بيع وشراء حسابات بيس وكلاش فيفا</h3>
+    <a href="https://chat.whatsapp.com/G42OPdzKcEBBSdvD5yrLnO?mode=ac_t">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">7?? ??? � ???? � ???? <span class="tag">WhatsApp</span></h3>
-        <a class="btn" href="https://chat.whatsapp.com/G42OPdzKcEBBSdvD5yrLnO?mode=ac_t" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب بيع وشراء حسابات ببجي</h3>
+    <a href="https://chat.whatsapp.com/KHIeZ6RPrm6Hz7TIJpd4WW?mode=ac_t">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">8?? ?????? ???? <span class="tag">WhatsApp</span></h3>
-        <a class="btn" href="https://chat.whatsapp.com/KHIeZ6RPrm6Hz7TIJpd4WW?mode=ac_t" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب كشف النصابين – احترس!</h3>
+    <a href="https://chat.whatsapp.com/CIepet0hZiY338kyGobK5l?mode=ac_t">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">9?? ??? ????????? � ????? <span class="tag">WhatsApp</span></h3>
-        <a class="btn" href="https://chat.whatsapp.com/CIepet0hZiY338kyGobK5l?mode=ac_t" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب بيع وشراء حسابات الفيس – 34 ألف عضو</h3>
+    <a href="https://www.facebook.com/share/7tNi1PSzdVaGCtsJ/?mibextid=K35XfP">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">?? ?????? ????? � 34 ??? ??? <span class="tag">Facebook</span></h3>
-        <a class="btn" href="https://www.facebook.com/share/7tNi1PSzdVaGCtsJ/?mibextid=K35XfP" target="_blank" rel="noopener">
-          <img class="icon"
-               src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-               alt="??????">
-          ????? ??????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب بيع وشراء تيليجرام</h3>
+    <a href="https://t.me/cesar_1242">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">1??1?? ??? ????? ???????? <span class="tag">Telegram</span></h3>
-        <a class="btn" href="https://t.me/cesar_1242" target="_blank" rel="noopener">
-          <img class="icon"
-               src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png"
-               alt="????????">
-          ???? ???????
-        </a>
-      </article>
+  <div class="group-card">
+    <h3>جروب شحن ومسابقات</h3>
+    <a href="https://whatsapp.com/channel/0029VaRR7Lj4SpkCWHuU2f46">انضم الآن</a>
+  </div>
 
-      <article class="card">
-        <h3 class="label">1??2?? ??? ???????? <span class="tag">WhatsApp ????</span></h3>
-        <a class="btn" href="https://whatsapp.com/channel/0029VaRR7Lj4SpkCWHuU2f46" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ???? ??????
-        </a>
-      </article>
-    </section>
+  <!-- زر واتساب عائم -->
+  <a href="https://wa.me/201126707385" class="whatsapp-float" target="_blank">
+    <img src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="واتساب">
+  </a>
 
-    <!-- ??????? (???????? ???? ????? ?? ?? ?????) -->
-    <h2 class="section-title">???????</h2>
-    <section class="grid">
-      <div class="service">
-        <h3>? ????? ??? ???? ???????</h3>
-        <a class="btn" href="https://whatsapp.com/channel/0029VaRR7Lj4SpkCWHuU2f46" target="_blank" rel="noopener">
-          <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-          ????? ??????
-        </a>
-      </div>
-      <div class="service">
-        <h3>? ???? ???? ??????</h3>
-        <a class="btn" href="https://www.facebook.com/share/7tNi1PSzdVaGCtsJ/?mibextid=K35XfP" target="_blank" rel="noopener">
-          <img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="??????">
-          ?????? ??????
-        </a>
-      </div>
-    </section>
+  <!-- الفوتر -->
+  <footer>
+    <p>طرق الدفع المتاحة: فودافون كاش - اتصالات كاش - أورانج كاش</p>
+    <p>© جميع الحقوق محفوظة - سيزار</p>
+  </footer>
 
-    <!-- ??? ????? -->
-    <h2 class="section-title">??? ?????</h2>
-    <section class="payments">
-      <div class="pay-grid">
-        <div class="pay-card">
-          <img src="visa.png" alt="Visa"
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/5968/5968267.png'">
-          <span>Visa</span>
-        </div>
-        <div class="pay-card">
-          <img src="mastercard.png" alt="Mastercard"
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/196/196561.png'">
-          <span>Mastercard</span>
-        </div>
-        <div class="pay-card">
-          <img src="vodafone-cash.png" alt="Vodafone Cash"
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/5969/5969021.png'">
-          <span>Vodafone Cash</span>
-        </div>
-        <div class="pay-card">
-          <img src="orange-cash.png" alt="Orange Cash"
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/5969/5969006.png'">
-          <span>Orange Cash</span>
-        </div>
-        <div class="pay-card">
-          <img src="etisalat.png" alt="Etisalat"
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/5969/5969080.png'">
-          <span>Etisalat</span>
-        </div>
-        <div class="pay-card">
-          <img src="we-pay.png" alt="WE Pay"
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/5969/5969042.png'">
-          <span>WE Pay</span>
-        </div>
-        <div class="pay-card">
-          <img src="paypal.png" alt="PayPal"
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/196/196565.png'">
-          <span>PayPal</span>
-        </div>
-        <div class="pay-card">
-          <img src="binance.png" alt="Binance"
-               onerror="this.src='https://cdn-icons-png.flaticon.com/512/6001/6001716.png'">
-          <span>Binance</span>
-        </div>
-      </div>
-
-      <a class="btn pay-cta" href="https://wa.me/201126707385" target="_blank" rel="noopener">
-        <img class="icon" src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-        ????? ????? ????
-      </a>
-    </section>
-
-  </main>
-
-  <footer>�   ?????? ?????</footer>
-
-<!-- ?? ?????? ?????? -->
-<a href="https://wa.me/201126707385" class="whatsapp-float" target="_blank" rel="noopener" aria-label="????? ??????">
-  <img src="https://i.ibb.co/v6xZb3T5/954eadcce4e158020d59bb7ab83f5481.jpg" alt="??????">
-</a>
+</body>
+</html>
